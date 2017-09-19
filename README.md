@@ -1,9 +1,15 @@
 # spaCy-th
 เพิ่มภาษาไทยให้กับ  spaCy
 
-อันนี้สร้างไว้สำหรับเอาไว้ไปรวมกับ [https://github.com/explosion/spaCy](https://l.facebook.com/l.php?u=https%3A%2F%2Fgithub.com%2Fexplosion%2FspaCy%3Ffref%3Dgc%26dti%3D408004796247683&h=ATNuLjWOl0U7AQ58H62vk6BX1Km4AMmDvBleAYsH_q0BsqXAyZLrtDwpBOGSfngmy4LeGQ0MEhdUix653Ll6QlERsuvmm0AWLfbzwdJY2OfmowdAwDH0eTntGlVXHNMrRw8bRur9QoKj) ที่  fork มาใน spaCy/th อีกรอบหนึ่งแล้วค่อยส่ง Pull requests กลับไป spaCy อีกรอบหนึ่ง
+> repository นี้เป็น repository ที่จะนำไปรวมกับ  https://github.com/explosion/spaCy ในอนาคต
 
-ที่แยกออกมาก่อน เพื่อให้สะดวกต่อการพัฒนา
+## ทำไมถึงเกิด repository นี้
+
+เนื่องจาก  spaCy นั้นเป็นไลบารี NLP ที่กำลังมาแรง และเหมาะสมกับงาน AI และงานอื่น ๆ ที่ใช้ Deep learning  มากกว่า NLTK
+
+ด้วยจุดนี้เองที่ทางนักพัฒนา NLP ต้องการให้  spaCy รองรับภาษาไทย จึงเกิด repository นี้ขึ้นมา
+
+โดยเราได้แยกไฟล์ที่จะนำไปรวมกับ spaCy/th ออกมาก่อน เพื่อให้สะดวกต่อการพัฒนา
 
 ## การทดสอบการใช้งาน
 
