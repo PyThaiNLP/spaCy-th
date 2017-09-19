@@ -23,20 +23,18 @@ class ThaiTokenizer(object):
         return Doc(self.vocab, words=words, spaces=[False]*len(words))
 
 class ThaiDefaults(BaseDefaults):
+	lex_attr_getters = dict(Language.Defaults.lex_attr_getters)
+	lex_attr_getters[LANG] = lambda text: 'th'
+	tokenizer_exceptions = TOKENIZER_EXCEPTIONS
+	tag_map = TAG_MAP
+	stop_words = STOP_WORDS
 	@classmethod
 	def create_tokenizer(cls, nlp=None):
 		return ThaiTokenizer(cls, nlp)
 
 class Thai(Language):
-    lang = 'th'
-
-    class Defaults(Language.Defaults):
-        lex_attr_getters = dict(Language.Defaults.lex_attr_getters)
-        lex_attr_getters[LANG] = lambda text: 'th'
-
-        tokenizer_exceptions = TOKENIZER_EXCEPTIONS
-        tag_map = TAG_MAP
-        stop_words = STOP_WORDS
+	lang = 'th'
+	Defaults = ThaiDefaults
 	def make_doc(self, text):
 		words = self.tokenizer(text,engine='newmm')
 		return Doc(self.vocab, words=words, spaces=[False]*len(words))
