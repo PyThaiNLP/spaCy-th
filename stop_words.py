@@ -1,7 +1,7 @@
 # encoding: utf8
 from __future__ import unicode_literals
 
-
+# data from https://github.com/wannaphongcom/pythainlp/blob/dev/pythainlp/corpus/stopwords-th.txt
 # stop words as whitespace-separated list
 STOP_WORDS = set("""
 นี้
