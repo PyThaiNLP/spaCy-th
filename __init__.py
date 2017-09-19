@@ -17,5 +17,5 @@ class Thai(Language):
         lex_attr_getters[LANG] = lambda text: 'th'
 
         tokenizer_exceptions = TOKENIZER_EXCEPTIONS
-        #tag_map = TAG_MAP
+        tag_map = TAG_MAP
         stop_words = STOP_WORDS
