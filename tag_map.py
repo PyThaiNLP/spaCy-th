@@ -3,7 +3,7 @@ from __future__ import unicode_literals
 
 from ..symbols import *
 
-
+'''
 TAG_MAP = {
     "ADV":      {POS: ADV},
     "NOUN":     {POS: NOUN},
@@ -22,3 +22,4 @@ TAG_MAP = {
     "ADJ":      {POS: ADJ},
     "VERB":     {POS: VERB}
 }
+'''
