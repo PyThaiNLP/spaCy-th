@@ -19,7 +19,7 @@ class ThaiTokenizer(object):
         self.tokenizer = word_tokenize
 
     def __call__(self, text):
-        words = [x.surface for x in self.tokenizer(text,engine='newmm')]
+        words = [x for x in self.tokenizer(text)]
         return Doc(self.vocab, words=words, spaces=[False]*len(words))
 
 class ThaiDefaults(BaseDefaults):
@@ -36,5 +36,5 @@ class Thai(Language):
 	lang = 'th'
 	Defaults = ThaiDefaults
 	def make_doc(self, text):
-		words = self.tokenizer(text,engine='newmm')
+		words = self.tokenizer(text)
 		return Doc(self.vocab, words=words, spaces=[False]*len(words))
