@@ -33,7 +33,7 @@ TAG_MAP = {
     # PRON
     "PROPN":    {POS: PROPN},
     "PPRS":    {POS: PROPN},
-    "PDMN?":    {POS: PROPN},
+    "PDMN":    {POS: PROPN},
     "PNTR":    {POS: PROPN},
     # DET
     "DET":      {POS: DET},
