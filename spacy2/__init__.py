@@ -22,8 +22,8 @@ class ThaiDefaults(Language.Defaults):
 
 
 class Thai(Language):
-    lang = 'th'
-    Defaults = ThaiDefaults
+	lang = 'th'
+	Defaults = ThaiDefaults
 	def make_doc(self, text):
 		try:
 			from pythainlp.tokenize import word_tokenize
@@ -32,6 +32,5 @@ class Thai(Language):
 								"https://github.com/wannaphongcom/pythainlp/")
 		words = [x for x in list(word_tokenize(text,"newmm"))]
 		return Doc(self.vocab, words=words, spaces=[False]*len(words))
-
 
 __all__ = ['Thai']
