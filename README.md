@@ -1,4 +1,7 @@
 # spaCy-th
+
+## โปรเจคนี้ถูกรวมเข้ากับ repository หลักแล้ว การพัฒนา ให้ fork จาก https://github.com/explosion/spaCy โดยตรง
+
 เพิ่มภาษาไทยให้กับ  spaCy
 
 > repository นี้เป็น repository ที่จะนำไปรวมกับ  https://github.com/explosion/spaCy ในอนาคต
